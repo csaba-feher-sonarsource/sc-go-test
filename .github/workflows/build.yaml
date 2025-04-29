@@ -19,6 +19,6 @@ jobs:
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@c999cf3dcab2dc84eca9cbe3122686425bbeffca
         with:
-          args: -Dsonar.someArg=aValue -Dsonar.anotherArgWithSpaces="Another Value"
+          args: -Dsonar.someArg=aValue && echo "Injection"
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
