@@ -10,6 +10,7 @@ on:
 jobs:
   sonarqube:
     name: SonarQube
+    environment: Prod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
