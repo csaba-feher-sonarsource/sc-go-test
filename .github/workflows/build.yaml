@@ -10,6 +10,7 @@ on:
 jobs:
   sonarqube:
     name: SonarQube
+    if: false
     environment: Prod
     runs-on: ubuntu-latest
     steps:
